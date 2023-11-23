@@ -1,0 +1,9 @@
+<launch>
+    <include file="$(dirname)/simulation.launch"/>
+    <include file="$(find turtlebot3_gazebo)/launch/turtlebot3_world.launch"/>
+    <include file="$(find turtlebot3_bringup)/lauch/turtlebot3_remote.launch"/>
+   
+    <node name="rviz" pkg="rviz" type="rviz"/>
+
+</launch>
+

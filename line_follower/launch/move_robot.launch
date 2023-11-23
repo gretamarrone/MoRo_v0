@@ -1,0 +1,4 @@
+<launch>
+<arg name="node_start_delay" default="1.0" />  
+    <node name ="move_robot" pkg="fhtw_line_follower" type="move_robot.py"  output="screen" launch-prefix="bash -c 'sleep $(arg node_start_delay); $0 $@' "/>
+</launch>

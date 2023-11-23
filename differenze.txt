@@ -1,0 +1,16 @@
+**LAUNCH FOLDER**
+- new file: 
+	move_robot.launch (starts move_robot.py)
+	play_rosbag.launch
+	line_follower.launch
+
+- fhtw_line_follower_project.launch: gui set to true + include move_base_project.launch
+
+
+**SRC FOLDER**
+- new nodes:
+	project_move.py (reach the goal)
+	read_image.py (display the image)
+	rospy_img_sub_example.py (with play_rosbag.launch)
+	move_robot.pyc (bytecode python, auto generated, doesnt matter?)
+

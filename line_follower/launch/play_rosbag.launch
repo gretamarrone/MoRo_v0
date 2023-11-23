@@ -1,0 +1,16 @@
+<launch>
+    <!-- Get path to rosbag file -->
+    <arg name="rosbag_folder" value="$(find fhtw_line_follower)"/>
+    <arg name="rosbag_path" value="$(arg rosbag_folder)/ImageStream.bag"/>
+
+    <!-- Set playback speed of rosbag file -->
+    <arg name="playback_speed" value="0.10"/>
+    
+    <node pkg="rosbag" type="play" name="image_player" args="$(arg rosbag_path) -r $(arg playback_speed)"/>
+    
+    <!-- Display the image with the rqt utils -->
+    <node pkg="rqt_image_view" type="rqt_image_view" name="image_viewer">
+        <remap from="image" to="camera"/>   
+    </node>
+
+</launch>

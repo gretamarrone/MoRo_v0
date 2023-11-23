@@ -1,0 +1,7 @@
+lethal_cost : 
+neutral_cost :
+cost_factor : 
+
+
+publish_potential: true
+orientation_mode : 1
